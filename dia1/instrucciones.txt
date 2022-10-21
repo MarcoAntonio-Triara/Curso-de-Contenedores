@@ -1,0 +1,22 @@
+======> lab1-a
+Se hace una demostración de qué es un contenedor, su nivel de aislamiento y
+su nivel de aislamiento comparado con una maquina virtual:
+
+A) Creando un contenedor nativo de Linux
+$ cd laboratorios/dia1/lab1-a/
+$ tar xvf alpine/alpine.tar.gz
+$ rm alpine/alpine.tar.gz
+$ ls -l alpine/   //Vemos los archivos que tiene, parecidos a los de una computadora
+$ sudo unshare --mount chroot alpine sh
+#    //esta es la shell del contenedor
+
+B) Se harán puebas de aislamiento
+# id   
+//veremos que el usuario en el corre un contenedor por default es root
+# sleep 500
+$ sudo ps -C sleep  
+//Abrimos una nueva pestaña de la shell de ubuntu
+$ kill idSleepProcess
+//Veremos que el proceso "sleep" en el contenedor ha sido detenido
+
+C) ahora con una maquina virtual se hara la misma prueba del proceso B)
