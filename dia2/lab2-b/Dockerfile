@@ -1,15 +1,15 @@
+## usando una imagen base dedicada para python
 FROM python:3-alpine
 
-# Create app directory
+# Cambiar el directorio de trabajo
 WORKDIR /app
 
-# Install app dependencies
+# Instalando las dependencias para la aplicación
 COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
-
-# Bundle app source
 COPY . .
 
+## exponiendo el puerto 5000 del contenedor
 EXPOSE 5000
 CMD [ "flask", "run","--host","0.0.0.0","--port","5000"]

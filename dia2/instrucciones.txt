@@ -10,3 +10,8 @@ h) abrir el navegador y buscar en localhost:80 en la barra del buscador.
 
 ======> lab2-b
 a) Creamos una carpeta dentro de curso llamada "aplicacion"
+b) Se copia los archivos "requeriments" y "app.py" de la carpeta lab2-barra y se pegan en "aplicación"
+c) Se crea el Dockerfile en la carpeta "aplicación"
+d) Se copian las instrucciones
+e) se construye la imagen "docker build -t flask-app . "
+f) se corre el contenedor "sudo docker run -it -p 8080:5000 -d flask-app "   
