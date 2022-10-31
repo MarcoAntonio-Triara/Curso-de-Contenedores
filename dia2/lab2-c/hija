@@ -1,2 +1,2 @@
-FROM mama
+FROM madre
 CMD ["bash"]
