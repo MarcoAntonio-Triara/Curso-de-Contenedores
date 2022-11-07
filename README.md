@@ -79,10 +79,7 @@
 - **Conectar un Contenedor a una red (Bridge)**
 - **Comunicar dos contenedores**
 
-#### E. Docker Compose
-- **Aplicaciones multicontenedores**
-
-#### F. Hoy en día en el ISSSTE
+#### E. Hoy en día en el ISSSTE
 - **Logros alcanzados – Aplicaciones migradas a contenedores**
 - **Arquitectura usada**
 - **¿Quién administra esta arquitectura?**
