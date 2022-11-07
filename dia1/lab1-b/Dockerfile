@@ -1,7 +1,7 @@
-## Declarando la imagen base
+## Declarando la imagen  base
 ARG VERSION=20.04
 
-## Traemos la imagen base de internet (DockerHub)
+## Traemos la imagen base de internet  (DockerHub)
 FROM ubuntu:${VERSION}
 
 ## Actualizamos el entorno e instalamos nginx 
