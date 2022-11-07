@@ -30,78 +30,59 @@
 - **Cosas a tener en cuenta sobre Docker Desktop**
 - **Primeros pasos con Docker, “Hello world"**
 
-### Día2
-#### A. Arquitectura de Docker
+#### D. Arquitectura de Docker
 - **Daemon**
 - **API**
 - **Linea de Comandos**
 
-#### B. Ventajas de Docker
+#### E. Ventajas de Docker
 - **Construir**
 - **Entregar**
 - **Ejecutar**
 
-#### C. Images - Entregar
+#### F. Dockerfile - Construir
+- **¿Qué es un Dockerfile?, ¿Es ejecutable?**
+- **Principales Comandos**
+- **Construyendo los primeros Dockerfiles**
+
+#### G. Images - Construir
 - **¿Cómo se forma una imagen (Capas)?**
 - **La inmutabilidad de una imagen**
 - **Ventajas de usar una Imagen de contenedores**
+- **Principales comandos - Imágenes**
 
-### Día 3
-#### A. Dockerfile - Construir
-- **¿Qué es un Dockerfile?, ¿Es ejecutable?**
-- **Principales Comandos**
-- **Construir una imagen**
 
-#### B. Dockerfile - Construir
+### Día 2 
+#### A. Contenedores - Ejecutar 
 - **Diferencias entre Imagen y Contenedor**
 - **Comandos de Contenedores de Docker**
 - **Ciclo de vida de los contenedores**
-- **Eliminar imágenes y Contenedores**
 - **Inspeccionando los despliegues**
 - **Modo interactivo**
 - **Exponiendo contenedores**
-- **Contenedor “pause”**
-- **Construyendo una imagen de Docker**
+- **Eliminar imágenes y Contenedores**
 
-### Día 4 
-#### A. Registros
+#### B. Registros
 - **pull y push**
 - **Registros Locales**
 - **Registros Remotos**
 
-#### B. Volúmenes en Docker
+#### C. Volúmenes en Docker
 - **Bind Mounts**
 - **Docker Volumes**
 - **¿Cuál es mejor?**
 
-#### C. Comunicación entre Contenedores
+#### D. Comunicación entre Contenedores
 - **Docker Bridge**
 - **Inspeccionando una red**
 - **Listar las redes disponibles**
 - **Conectar un Contenedor a una red (Bridge)**
 - **Comunicar dos contenedores**
 
-#### D. Docker Compose
+#### E. Docker Compose
 - **Aplicaciones multicontenedores**
 
-### Día5
-#### A. Breve paso por lo qué es Kubernetes
-- **¿Que kubernetes?**
-- **¿Cómo funciona?**
-
-#### B. Diferencia entre Kubernetes y Docker
-
-#### C. Volúmenes en Docker
-- **Los contenedores como enfoque en la seguridad**
-- **Usuario root**
-- **Contenedores privilegiados**
-- **La información en las capas de un contenedor**
-- **Escaneo de imágenes**
-- **El valor de las versiones seguras**
-- **Imágenes Validadas**
-- **El enfoque Cero confianza (Zero trust Approach)**
-
-#### D. Hoy en día en el ISSSTE
+#### F. Hoy en día en el ISSSTE
 - **Logros alcanzados – Aplicaciones migradas a contenedores**
 - **Arquitectura usada**
 - **¿Quién administra esta arquitectura?**
