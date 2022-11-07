@@ -1,17 +1,15 @@
-## Declarando la imagen base
-ARG VERSION=20.04
+ARG VERSION=18.04
 
-## Traemos la imagen base de internet (DockerHub)
 FROM ubuntu:${VERSION}
 
-## Actualizamos el entorno e instalamos nginx 
-RUN apt-get -y update && apt-get -y install nginx
+RUN apt-get update && apt-get install -y curl nginx \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-## Copiamos las ocnfiguraciones para que funcione nginx
-COPY default /etc/nginx/sites-available/default
+RUN mkdir /test-dir
 
-## Exponemos el puerto 80 del contenedor y declaramos que trabajara con el protocolo tcp
-EXPOSE 80/tcp
+ENV SHELL /bin/bash
 
-# Una vez corre el contenedor, corremos el servidor nginx
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
