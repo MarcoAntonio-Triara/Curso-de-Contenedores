@@ -6,8 +6,8 @@
 ------------
 
 ## Contenido para el participante
-#### - [Manual para el participante](https://docs.google.com/document/d/1nyzjCzg5vTN08p_gtR_6MviqHuIss-xM/edit?usp=sharing&ouid=103859002972110344283&rtpof=true&sd=true "EL manual para el participante")
-#### - [Slides del curso](https://docs.google.com/presentation/d/1VylmSUChDqxTMC_A-JK-Ckg3pWCoFNRj/edit?usp=sharing&ouid=103859002972110344283&rtpof=true&sd=true "Las slides del curso")
+#### - [Manual para el participante](https://drive.google.com/file/d/1mcz249tThgvzPFAj4QPARorCzu9EW2Mo/view?usp=share_link "EL manual para el participante")
+#### - [Slides del curso](https://drive.google.com/file/d/1anrr43OlI6l7rNqEtOyK4ngaHjHi1rR9/view?usp=share_link "Las slides del curso")
 
 ------------
 
