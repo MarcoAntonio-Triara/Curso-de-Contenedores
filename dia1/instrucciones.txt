@@ -2,7 +2,7 @@
 Se hace una demostración de qué es un contenedor, su nivel de aislamiento y
 su nivel de aislamiento comparado con una maquina virtual:
 
-A) Creando un contenedor nativo de Linux, creaci[on del contenedor.
+	A) Creando un contenedor nativo de Linux, creacion del contenedor.
 $ cd laboratorios/dia1/lab1-a/
 $ tar xvf alpine/alpine.tar.gz
 $ rm alpine/alpine.tar.gz
