@@ -1,0 +1,65 @@
+======> lab1-a
+Se hace una demostración de qué es un contenedor, su nivel de aislamiento y
+su nivel de aislamiento comparado con una maquina virtual:
+
+A) Creando un contenedor nativo de Linux, creaci[on del contenedor.
+$ cd laboratorios/dia1/lab1-a/
+$ tar xvf alpine/alpine.tar.gz
+$ rm alpine/alpine.tar.gz
+$ ls -l alpine/   //Vemos los archivos que tiene, parecidos a los de una computadora
+$ sudo unshare --mount chroot alpine sh
+#    //esta es la shell del contenedor
+
+B) Se harán puebas de aislamiento.
+# id   
+//veremos que el usuario en el corre un contenedor por default es root
+# sleep 500
+$ sudo ps -C sleep  
+//Abrimos una nueva pestaña de la shell de ubuntu
+$ kill idSleepProcess
+//Veremos que el proceso "sleep" en el contenedor ha sido detenido
+
+C) ahora con una maquina virtual se hara la misma prueba del proceso B)
+
+======> lab1-b
+a) Creamos una carpera en el escritorio llamada "curso"
+b) Creamos una carpeta dentro llamada "servidor"
+c) copiamos el archivo "default" en "laboratorios/dia2/lab2-a" dentro de la carpeta "servidor"
+d) abrimos una powe-shell en la carpeta "servidor"
+e) creamos el "Dockerfile" con las insrucciones
+f) ejecutamos "docker build -t nginx-file ." . Que creará la imagen con el nombre "nginx-file"
+g) ejecutamos "docker run -d --name nginx-contenedor -p 80:80 nginx-file"
+h) abrir el navegador y buscar en localhost:80 en la barra del buscador.
+
+======> lab1-c
+a) Creamos una carpeta dentro de curso llamada "aplicacion"
+b) Se copia los archivos "requeriments" y "app.py" de la carpeta lab2-barra y se pegan en "aplicación"
+c) Se crea el Dockerfile en la carpeta "aplicación"
+d) Se copian las instrucciones
+e) se construye la imagen "docker build -t flask-imagen . "
+f) se corre el contenedor "docker run -tid --name flask-contenedor -p 8080:5000 flask-imagen"   
+
+======> lab1-d
+	PARA LA IMAGEN BASE
+a) Se crea un archivo sin extension en VSC con el nombre "mama" y se guarda
+b) Se copia el contnido del Dockerfile de "mama"
+c) Se construye :
+	"docker build –t imagen-mama -f mama ."
+d) Se comprueba que existe:
+	"docker images"
+-----------------------
+	PARA LA IMAGEN HIJA
+a) Se crea un archivo sin extension en VSC con el nombre de "hija" y se guarda
+b) Se copia el contnido del Dockerfile de "hija"
+c) Se construye la imagen hija:
+	"docker build –t imagen-hija –f hija ."
+d) Se comprueba que exista 
+	"docker images"
+-----------------------------------------
+	CONTENEDOR HIJA
+a) Se corre el contenedor
+	"docker run –tid --name contenedor-hija  imagen-hija"
+b) Se entra al contenedor para verificar su procedencia
+	"docker exec -it contenedor-hija /bin/bash"
+	$  cat /etc/os-reléase
+c) Debe decir ubuntu 20.04, con eso se comprueba que el cotenedor hijo usa el mismo OS del la imagen base hecho por nosotros.
