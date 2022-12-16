@@ -62,4 +62,4 @@ a) Se corre el contenedor
 b) Se entra al contenedor para verificar su procedencia
 	"docker exec -it contenedor-hija /bin/bash"
 	$  cat /etc/os-reléase
-c) Debe decir ubuntu 20.04, con eso se comprueba que el cotenedor hijo usa el mismo OS del la imagen base hecho por nosotros.
+c) Debe decir ubuntu 20.04, con eso se comprueba que el cotenedor hijo usa el mismo OS del la imagen base (madre) hecho por nosotros.
