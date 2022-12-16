@@ -2,7 +2,7 @@
 Se hace una demostración de qué es un contenedor, su nivel de aislamiento y
 su nivel de aislamiento comparado con una maquina virtual:
 
-	A) Creando un contenedor nativo de Linux, creacion del contenedor.
+  A) Creando un contenedor nativo de Linux, creacion del contenedor.
 $ cd laboratorios/dia1/lab1-a/
 $ tar xvf alpine/alpine.tar.gz
 $ rm alpine/alpine.tar.gz
@@ -10,7 +10,7 @@ $ ls -l alpine/   //Vemos los archivos que tiene, parecidos a los de una computa
 $ sudo unshare --mount chroot alpine sh
 #    //esta es la shell del contenedor
 
-B) Se harán puebas de aislamiento.
+  B) Se harán puebas de aislamiento.
 # id   
 //veremos que el usuario en el corre un contenedor por default es root
 # sleep 500
@@ -19,7 +19,7 @@ $ sudo ps -C sleep
 $ kill idSleepProcess
 //Veremos que el proceso "sleep" en el contenedor ha sido detenido
 
-C) ahora con una maquina virtual se hara la misma prueba del proceso B)
+  C) ahora con una maquina virtual se hara la misma prueba del proceso B)
 
 ======> lab1-b
 a) Creamos una carpera en el escritorio llamada "curso"
@@ -41,10 +41,10 @@ f) se corre el contenedor "docker run -tid --name flask-contenedor -p 8080:5000 
 
 ======> lab1-d
 	PARA LA IMAGEN BASE
-a) Se crea un archivo sin extension en VSC con el nombre "mama" y se guarda
-b) Se copia el contnido del Dockerfile de "mama"
+a) Se crea un archivo sin extension en VSC con el nombre "madre" y se guarda
+b) Se copia el contenido del Dockerfile de "madre"
 c) Se construye :
-	"docker build –t imagen-mama -f mama ."
+	"docker build –t imagen-madre -f madre ."
 d) Se comprueba que existe:
 	"docker images"
 -----------------------
