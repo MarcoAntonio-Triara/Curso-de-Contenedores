@@ -7,7 +7,7 @@
 
 ## Contenido para el participante
 #### - [Manual para el participante](https://drive.google.com/file/d/1-IK7TwIusyExP-96Z77w3blWI7uFkdQy/view?usp=share_link "EL manual para el participante")
-#### - Slides del curso
+#### - [Slides del curso](https://drive.google.com/file/d/1Dv6edJ-B7cG11yLWgXdmkqh9R30xLgAz/view?usp=share_link "Slides del curso")
 
 ------------
 
